@@ -1,0 +1,53 @@
+## Synopsis 
+
+Shrimp Simulation Assignment  for Fundamentals of Programming COMP1005
+
+## Contents 
+
+README - readme file for the Assignment 
+check.py -  Consists of various functions that validate and check parametres 
+fileIO.py - Handles File Input and Output of the Simulation Program
+shrimp.py - Class defintion for simulation of brine shrimp 
+shrimpSimBase.py - Simulation of the Lifecycle of a Brine Shrimp (Main Program)
+userInput.py - Handles Output functions that print out to the terminal 
+
+## Dependencies 
+
+shrimpSimBase.py - shrimp.py,fileIo.py,userInput.py 
+shrimp.py - none 
+fileIO.py - shrimp.py, userInput.py 
+check.py - shrimp.py 
+userInput.py - check.py, shrimp.py 
+
+## version information 
+
+02/10/2019 - Base Version of the Assignment 
+10/10/2019 - check.py created 
+22/10/2019 - userinput.py created 
+27/10/2019 - modification of collision function in check.py 
+
+## How to Use
+
+1. To use this Program with Default Inputs 
+   ---------------------------------------
+    python3 shrimpSimBase.py 
+
+2. To use this program with File Input
+   -----------------------------------
+    python3 shrimpSimBase.py <input file> <output file> 
+
+3. To use this program with command line parametres
+   ------------------------------------------------
+    python3 shrimpSimBase.py <XMAX <YMAX> <POPULATION <TIMESTEP> 
+
+4. To use this program with shrimp_sweep.sh
+   ----------------------------------------
+    ./shrimp_sweep.sh <low_y> <hi_y> <step_y> <low_x> <hi_x> <step_x> <low_pop> <hi_pop> <step_pop> 
+
+## References 
+
+shrimp_sweep.sh - structure of dosage_sweep.sh retrieved from Practical 6, Topic 8 (Scripts & Automation) 
+shrimpSimBase.py - Base code retrieved from Valerie Maxwell for Assignment 
+shrimp.py - Base code retrieved from Valerie Maxwell for Assignment 
+
+
